@@ -7,11 +7,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mygeopy"
-version = "0.1.0"
+version = "0.1.0ao0"
+license = "LICENSE.txt"
 description = "Simple geometry utilities for testing"
 requires-python = ">=3.8"
 authors = [
-  { name = "Your Name" }
+  { name = "Tanmay Singh" }
 ]
 readme = "README.md"
 dependencies = []
