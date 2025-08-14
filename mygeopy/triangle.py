@@ -21,7 +21,7 @@ def hypot(a: float, b: float) -> float:
         >>> hypot(8, 15)
         17.0
         >>> hypot(7, 24)
-        25.0       
+        25.0
     """
     if not isinstance(a, numbers.Real) or not isinstance(b, numbers.Real):
         raise ValueError("`a` and `b` must be real numbers")
