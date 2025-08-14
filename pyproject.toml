@@ -1,0 +1,33 @@
+[build-system]
+requires = [
+  "setuptools>=67",
+  "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mygeopy"
+version = "0.1.0"
+description = "Simple geometry utilities for testing"
+requires-python = ">=3.8"
+authors = [
+  { name = "Your Name" }
+]
+readme = { text = "Minimal test package exposing mygeopy.triangle.hypot." }
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0"
+]
+
+[tool.setuptools]
+# Map the package name "mygeopy" to the repository root so that
+# mygeopy/__init__.py and mygeopy/triangle.py are provided by the
+# top-level files __init__.py and triangle.py.
+packages = ["mygeopy"]
+package-dir = { mygeopy = "." }
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
