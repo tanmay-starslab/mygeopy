@@ -13,7 +13,7 @@ requires-python = ">=3.8"
 authors = [
   { name = "Your Name" }
 ]
-readme = { text = "Minimal test package exposing mygeopy.triangle.hypot." }
+readme = "README.md"
 dependencies = []
 
 [project.optional-dependencies]
@@ -22,11 +22,8 @@ dev = [
 ]
 
 [tool.setuptools]
-# Map the package name "mygeopy" to the repository root so that
-# mygeopy/__init__.py and mygeopy/triangle.py are provided by the
-# top-level files __init__.py and triangle.py.
 packages = ["mygeopy"]
-package-dir = { mygeopy = "." }
+
 
 [tool.pytest.ini_options]
 addopts = "-q"
