@@ -1,0 +1,10 @@
+# add ignore for test files
+*.pyc
+__pycache__/
+tests/
+build/
+dist/
+*.egg-info/
+*.log
+*.pytest_cache/
+
